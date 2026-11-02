@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+models/*.joblib
+reports/**/*.png
+.streamlit/secrets.toml
+!reports/ex07/*.png
+reports/**/*.joblib
+!reports/lab13/*.png

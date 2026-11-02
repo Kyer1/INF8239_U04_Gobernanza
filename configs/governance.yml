@@ -1,0 +1,26 @@
+system_name: Territorial Review DSS - Synthetic
+purpose: Prioritize synthetic cases for human review
+prohibited_uses:
+  - automatic intervention
+  - eligibility decision
+  - emergency declaration
+sensitive_features: [protected_group, age_band]
+direct_identifiers: [name, document_number, email, phone]
+model_kind: logistic_no_age   # decisión EX07: sin age_band como predictor
+safe_baseline: FIFO          # revisión por orden de llegada, sin modelo
+min_group_support: 20   # grupos con menos casos en prueba se reportan, pero no se interpretan
+gates:
+  min_recall: 0.68
+  max_recall_gap: 0.16
+  max_fpr_gap: 0.16
+  max_latency_ms: 500
+  max_model_kb: 1024
+  stop_failed_checks: 3
+monitoring:
+  window: month
+  min_window_cases: 20      # ventanas con menos casos se reportan sin alerta
+  alert_recall: 0.68
+  alert_recall_gap: 0.16
+  alert_fpr_gap: 0.16
+  psi_warning: 0.10
+  psi_alert: 0.25
