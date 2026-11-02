@@ -1,0 +1,6 @@
+window,n,recall,recall_gap,fpr_gap,min_group_n,psi_max,psi_variable,status,alerts
+2026-09,6,0.75,0.33333333333333337,0.0,3,0.45442952821668714,exposure,INSUFICIENTE,ventana con pocos casos: se reporta sin alertar
+2026-10,54,0.6071428571428571,0.07142857142857151,0.03809523809523807,19,0.21918050397607416,infrastructure_score,ALERTA,recall bajo; aviso: brechas no evaluables (grupo con n=19 < 20); aviso de deriva en infrastructure_score
+2026-11,54,0.45161290322580644,0.2875,0.2647058823529412,21,0.19225387579309136,infrastructure_score,ALERTA,recall bajo; brecha de recall; brecha de FPR; aviso de deriva en infrastructure_score
+2026-12,46,0.6206896551724138,0.31818181818181823,0.23333333333333336,16,0.16365509493150632,previous_incidents,ALERTA,recall bajo; aviso: brechas no evaluables (grupo con n=16 < 20); aviso de deriva en previous_incidents
+acumulado,160,0.5652173913043478,0.16136687233032754,0.16346153846153846,59,0.041916777485427124,previous_incidents,ALERTA,recall bajo; brecha de recall; brecha de FPR

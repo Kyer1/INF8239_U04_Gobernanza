@@ -1,0 +1,20 @@
+{
+  "validation_threshold": 0.45,
+  "min_group_support": 20,
+  "gates": {
+    "min_recall": 0.68,
+    "max_recall_gap": 0.16,
+    "max_fpr_gap": 0.16,
+    "max_latency_ms": 500,
+    "max_model_kb": 1024
+  },
+  "test_size": 160,
+  "test_by_group": {
+    "G1": 101,
+    "G2": 59
+  },
+  "base_rate_by_group": {
+    "G1": 0.485,
+    "G2": 0.729
+  }
+}

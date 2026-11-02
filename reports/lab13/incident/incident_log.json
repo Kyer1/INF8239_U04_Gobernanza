@@ -1,0 +1,42 @@
+[
+  {
+    "step": "deteccion",
+    "at": "2026-11-02T14:19:26+00:00",
+    "detail": "control de ceros: alerta en ['Norte']; ventanas en ALERTA: ['2026-10', '2026-11', '2026-12', 'acumulado']; puertas=STOP fallan ['recall', 'recall_gap', 'fpr_gap'] (recall 0.565, brecha recall 0.161, brecha FPR 0.163)"
+  },
+  {
+    "step": "clasificacion",
+    "at": "2026-11-02T14:34:26+00:00",
+    "detail": "severidad GRAVE según regla: Grave: la puerta de calidad devuelve STOP o se incumple una condición de retiro. Moderado: REVIEW. Leve: solo avisos de deriva."
+  },
+  {
+    "step": "contencion",
+    "at": "2026-11-02T14:49:26+00:00",
+    "detail": "Se suspende la puntuación y se activa safe_baseline=FIFO. Responsable: Institutional Owner (Accountable en Incident response); ejecuta el ML Engineer."
+  },
+  {
+    "step": "rollback",
+    "at": "2026-11-02T15:04:26+00:00",
+    "detail": "con el modelo, 40 casos reales quedaban sin priorizar; con FIFO se revisan los 160 casos (0 omitidos). Casos afectados por la falla: 25"
+  },
+  {
+    "step": "preservacion",
+    "at": "2026-11-02T15:19:26+00:00",
+    "detail": "modelo, huellas SHA-256 y reportes guardados en reports/lab13/incident/"
+  },
+  {
+    "step": "comunicacion_interna",
+    "at": "2026-11-02T15:49:26+00:00",
+    "detail": "Aviso al Product Owner, Data Scientist y operadores en menos de 24 horas: el orden de la cola vuelve a FIFO y se suspende la puntuación."
+  },
+  {
+    "step": "comunicacion_afectados",
+    "at": "2026-11-03T14:19:26+00:00",
+    "detail": "Aviso a los representantes de las personas afectadas en 5 días hábiles: qué pasó, qué casos de zona Norte se revisan de nuevo y cómo apelar."
+  },
+  {
+    "step": "postmortem",
+    "at": "2026-11-03T15:19:26+00:00",
+    "detail": "Data Scientist (R) con aprobación del Institutional Owner (A); plazo: 10 días hábiles después de la contención"
+  }
+]

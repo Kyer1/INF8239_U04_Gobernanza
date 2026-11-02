@@ -1,0 +1,14 @@
+{
+  "model_kind": "logistic_no_age",
+  "features": [
+    "zone",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure"
+  ],
+  "model_sha256": "53b250fa700f",
+  "policy_sha256": "f75d92c089bd",
+  "data_sha256": "2af1858fe874",
+  "train_rows": 480,
+  "test_rows": 160
+}

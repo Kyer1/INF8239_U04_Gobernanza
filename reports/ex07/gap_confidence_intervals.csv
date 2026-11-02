@@ -1,0 +1,9 @@
+modelo,metric,gap,ci_low,ci_high
+logistic (umbral 0.50),recall,0.1376,0.0117,0.325
+logistic (umbral 0.50),fpr,0.125,0.0085,0.4028
+"logistic (umbral 0.45, validación)",recall,0.1405,0.0086,0.3204
+"logistic (umbral 0.45, validación)",fpr,0.149,0.0076,0.4313
+logistic sin age_band (umbral 0.50),recall,0.1376,0.0082,0.32
+logistic sin age_band (umbral 0.50),fpr,0.1442,0.0075,0.4279
+tree (umbral 0.50),recall,0.1813,0.0222,0.3671
+tree (umbral 0.50),fpr,0.1683,0.0084,0.4592

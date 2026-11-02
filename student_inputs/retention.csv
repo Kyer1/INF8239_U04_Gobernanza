@@ -1,0 +1,6 @@
+artifact,location,retention,deletion,owner
+Datos de casos,data/,Mientras el caso esté abierto + 12 meses,Borrado del archivo y de copias; registro de la eliminación,Data Engineer
+Modelo serializado,models/*.joblib (fuera de Git),Hasta 12 meses después de ser reemplazado,Borrado; se conserva solo su huella SHA-256 en reports/lab13/traceability.json,ML Engineer
+Reportes de auditoría y monitoreo,reports/,Mientras exista el modelo + 12 meses,Archivo y luego borrado,Data Scientist
+Registro de incidentes y postmortem,reports/lab13/incident/,24 meses,Archivo y luego borrado,Institutional Owner
+Registro de apelaciones,Sistema de casos (fuera del repositorio),Mientras el caso esté abierto + 12 meses,Borrado con el caso,Product Owner

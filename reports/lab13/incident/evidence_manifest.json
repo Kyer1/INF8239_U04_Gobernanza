@@ -1,0 +1,30 @@
+{
+  "incident_id": "INC-2026-11-01-SIM",
+  "model_sha256": "53b250fa700f",
+  "policy_sha256": "f75d92c089bd",
+  "data_sha256": "2af1858fe874",
+  "scenario": "zone=Norte, previous_incidents=0 desde 2026-11-01",
+  "affected_cases": 25,
+  "gate_decision": {
+    "status": "STOP",
+    "checks": {
+      "recall": false,
+      "recall_gap": false,
+      "fpr_gap": false,
+      "latency": true,
+      "model_size": true
+    },
+    "failed": [
+      "recall",
+      "recall_gap",
+      "fpr_gap"
+    ],
+    "human_action": "Suspend model, return to safe baseline (FIFO) and open incident"
+  },
+  "files": [
+    "zero_rate_check.csv",
+    "monitoring_incident.csv",
+    "incident_log.json",
+    "INCIDENT_POSTMORTEM.md"
+  ]
+}

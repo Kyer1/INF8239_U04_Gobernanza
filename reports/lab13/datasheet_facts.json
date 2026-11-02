@@ -1,0 +1,47 @@
+{
+  "data_sha256": "2af1858fe874",
+  "rows": 640,
+  "columns": [
+    "case_id",
+    "received_date",
+    "zone",
+    "protected_group",
+    "age_band",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure",
+    "target"
+  ],
+  "date_range": [
+    "2026-01-01",
+    "2026-12-27"
+  ],
+  "target_rate": 0.552,
+  "by_group": {
+    "G1": 396,
+    "G2": 244
+  },
+  "by_age_band": {
+    "60+": 179,
+    "30-44": 163,
+    "45-59": 150,
+    "18-29": 148
+  },
+  "by_zone": {
+    "Sur": 164,
+    "Este": 164,
+    "Oeste": 157,
+    "Norte": 155
+  },
+  "missing_values": 0,
+  "duplicated_case_id": 0,
+  "operator_view_columns": [
+    "case_id",
+    "received_date",
+    "zone",
+    "previous_incidents",
+    "infrastructure_score",
+    "exposure",
+    "target"
+  ]
+}

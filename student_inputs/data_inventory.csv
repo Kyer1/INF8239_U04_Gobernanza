@@ -1,0 +1,10 @@
+field,description,category,purpose,use,minimization,retention,access
+case_id,Identificador técnico del caso (seudónimo),identificador indirecto,Trazar revisiones y apelaciones,trazabilidad,Se conserva; no se muestra en reportes agregados,Mientras el caso esté abierto + 12 meses,Operador y Data team
+received_date,Fecha de recepción del caso,temporal,Partición temporal y monitoreo por mes,partición y monitoreo,Se conserva; en reportes se agrega por mes,Mientras el caso esté abierto + 12 meses,Data team
+zone,Zona territorial (4 categorías),cuasi-identificador,Predictor de riesgo territorial,predictor,Generalizada a 4 zonas; no se usan coordenadas ni direcciones,Mientras el caso esté abierto + 12 meses,Data team
+protected_group,Grupo protegido (G1/G2),sensible,Auditoría de equidad,solo auditoría,Excluido como predictor; acceso restringido,Mientras exista el modelo + 12 meses (evidencia de auditoría),Data team (auditoría)
+age_band,Franja de edad,sensible,Auditoría interseccional,solo auditoría,Generalizada en franjas; excluida como predictor desde EX07,Mientras exista el modelo + 12 meses (evidencia de auditoría),Data team (auditoría)
+previous_incidents,Número de incidentes previos,predictor,Predictor de riesgo,predictor,Solo el conteo; no el detalle de los incidentes,Mientras el caso esté abierto + 12 meses,Data team
+infrastructure_score,Índice de estado de infraestructura (0-1),predictor,Predictor de riesgo,predictor,Índice agregado; no inspecciones individuales,Mientras el caso esté abierto + 12 meses,Data team
+exposure,Índice de exposición (0-1),predictor,Predictor de riesgo,predictor,Índice agregado,Mientras el caso esté abierto + 12 meses,Data team
+target,Ocurrió incidente (1) o no (0),objetivo,Entrenamiento y evaluación,objetivo,Binario; sin descripción del incidente,Mientras exista el modelo + 12 meses,Data team

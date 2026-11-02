@@ -1,0 +1,5 @@
+stakeholder,benefit,harm,power,participation
+Affected person,Atención más rápida cuando su caso tiene riesgo alto,Un caso real no priorizado (falso negativo) espera más; un falso positivo genera revisiones o visitas innecesarias,low,Consulta con representantes comunitarios; canal de apelación y aviso de uso del sistema
+Operator,Ordena la carga de trabajo y enfoca la revisión,Sesgo de automatización (confiar de más en la puntuación); más carga si hay muchos falsos positivos,medium,Capacitación; puede reordenar casos y registrar desacuerdos con el modelo
+Institutional owner,Uso más eficiente de recursos de revisión,Daño reputacional y legal si el sistema trata peor a un grupo o se usa fuera de alcance,high,Aprueba despliegue; decide retiro; revisa el registro de riesgos cada mes
+Data team,Retroalimentación para mejorar datos y modelo,Responsabilidad por errores de datos o deriva no detectada,medium,Mantiene auditoría de equidad; reporta brechas y propone mitigaciones

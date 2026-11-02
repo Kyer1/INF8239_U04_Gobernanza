@@ -1,0 +1,6 @@
+from_role,to_role,artifact,acceptance_criterion,evidence
+Data Engineer,Data Scientist,Datos validados e inventario,Esquema válido; sin identificadores directos; inventario cubre todas las columnas,tests/test_privacy.py; tests/test_inventory.py; reports/lab13/datasheet_facts.json
+Data Scientist,ML Engineer,Modelo y auditoría de equidad,Puertas en PASS; IC de brechas y soporte documentados; Model Card completa,reports/ex07/; docs/MODEL_CARD.md
+ML Engineer,Product Owner,DSS desplegable y trazable,Decisión con versión de modelo/política/datos; app abre sin errores; monitoreo configurado,reports/lab13/deployment_decision.json; tests/test_app.py
+Product Owner,Operator,Procedimiento de uso y apelación,Operador capacitado en límites del sistema y canal de apelación,docs/HANDOFF.md; student_inputs/lab11_impact.yml
+ML Engineer,Institutional Owner,Simulacro de incidente y postmortem,Alerta detectada; contención y rollback ejecutados; evidencia preservada,reports/lab13/incident/
